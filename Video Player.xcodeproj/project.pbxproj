@@ -13,6 +13,7 @@
 		50878C0824502A0300B9B89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50878C0624502A0300B9B89A /* Main.storyboard */; };
 		50878C0A24502A0900B9B89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50878C0924502A0900B9B89A /* Assets.xcassets */; };
 		50878C0D24502A0900B9B89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50878C0B24502A0900B9B89A /* LaunchScreen.storyboard */; };
+		50878C192450308200B9B89A /* MediaPlayerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50878C182450308200B9B89A /* MediaPlayerHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		50878C0924502A0900B9B89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50878C0C24502A0900B9B89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50878C0E24502A0900B9B89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50878C182450308200B9B89A /* MediaPlayerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		50878BFF24502A0300B9B89A /* Video Player */ = {
 			isa = PBXGroup;
 			children = (
-				50878C0024502A0300B9B89A /* AppDelegate.swift */,
-				50878C0224502A0300B9B89A /* SceneDelegate.swift */,
-				50878C0424502A0300B9B89A /* ViewController.swift */,
-				50878C0624502A0300B9B89A /* Main.storyboard */,
-				50878C0924502A0900B9B89A /* Assets.xcassets */,
-				50878C0B24502A0900B9B89A /* LaunchScreen.storyboard */,
 				50878C0E24502A0900B9B89A /* Info.plist */,
+				50878C172450306D00B9B89A /* Handler */,
+				50878C142450301300B9B89A /* Delegate */,
+				50878C162450305D00B9B89A /* View Controller */,
+				50878C152450303A00B9B89A /* Resources */,
 			);
 			path = "Video Player";
+			sourceTree = "<group>";
+		};
+		50878C142450301300B9B89A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				50878C0024502A0300B9B89A /* AppDelegate.swift */,
+				50878C0224502A0300B9B89A /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		50878C152450303A00B9B89A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50878C0924502A0900B9B89A /* Assets.xcassets */,
+				50878C0B24502A0900B9B89A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50878C162450305D00B9B89A /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50878C0424502A0300B9B89A /* ViewController.swift */,
+				50878C0624502A0300B9B89A /* Main.storyboard */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		50878C172450306D00B9B89A /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				50878C182450308200B9B89A /* MediaPlayerHandler.swift */,
+			);
+			path = Handler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +175,7 @@
 			files = (
 				50878C0524502A0300B9B89A /* ViewController.swift in Sources */,
 				50878C0124502A0300B9B89A /* AppDelegate.swift in Sources */,
+				50878C192450308200B9B89A /* MediaPlayerHandler.swift in Sources */,
 				50878C0324502A0300B9B89A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XG9VTZMR8;
 				INFOPLIST_FILE = "Video Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XG9VTZMR8;
 				INFOPLIST_FILE = "Video Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
