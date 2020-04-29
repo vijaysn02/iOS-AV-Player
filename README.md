@@ -55,3 +55,5 @@ No specific Configuration needed.
 ```
     MediaPlayer.openMedia(url:videoURLString,viewController:self)
 ```
+
+Check out my Post about AVPlayer : [AV-Player](("https://vijaysn.com/2020/04/23/ios-av-player/")
